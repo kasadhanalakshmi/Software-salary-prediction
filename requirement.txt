@@ -1,0 +1,16 @@
+Machine learning libraries - 
+numpy >= 1.20.0
+pandas >= 1.2.0
+scikit-learn >= 1.0.0
+matplotlib >= 3.3.0
+seaborn >= 0.11.0
+xgboost >= 1.5.0
+
+For Deployment/ Web Framework - 
+flask >= 2.0.0
+
+For Development Environment Tools (optional) - 
+jupyterlab >= 3.0.0
+ipykernel >= 6.0.0
+
+
