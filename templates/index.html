@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SalaryPredict</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="{{ url_for('home') }}" class="logo">SalaryPredict</a>
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('predict_form') }}">Predict</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Software Industry Salary Prediction</h1>
+            <p>Ignite the most powerful growth engine you have ever built for your company.</p>
+            <a href="{{ url_for('predict_form') }}" class="button">Salary</a>
+        </div>
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='img/dashboard_graphic.png') }}" alt="Dashboard Graphic">
+        </div>
+    </div>
+</body>
+</html>

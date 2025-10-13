@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="{{ url_for('home') }}" class="logo">SalaryPredict</a>
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="result-page-content">
+        <h1>The Predicted Salary is:</h1>
+        <div class="predicted-salary-value">
+            {{ predicted_salary }} 
+        </div>
+        <div class="result-image">
+            <img src="{{ url_for('static', filename='img/dashboard_graphic.png') }}" alt="Dashboard Graphic">
+        </div>
+    </div>
+</body>
+</html>
